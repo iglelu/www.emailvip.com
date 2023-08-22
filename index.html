@@ -10,8 +10,8 @@
 	<title>emailvip.com</title>
 </head>
 <script>
-	var host = window.location.host;
-	console.log(host);
+	var host =  window.location.host;
+	console.log( host + " - Funciona" );
 	</script>
 <body>
 	<div id="content">
@@ -35,7 +35,9 @@
 	<script>
 		var currentTime = new Date();
 		var year = currentTime.getFullYear()
-		document.getElementById("copy").innerHTML = "&copy; "+ year + " emailvip.com | unproyecto.eu";
+		var host =  window.location.host;
+		
+		document.getElementById("copy").innerHTML = "&copy; "+ year + " " +  host +  " emailvip.com | unproyecto.eu";
 	</script>
 </body>
 </html>
