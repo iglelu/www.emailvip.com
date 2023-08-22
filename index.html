@@ -29,8 +29,13 @@
 			<h2>Pronto estaremos ofreciendo nuestros servicios.</h2>
 		</div>
 		<div id="footer">
-			<p>&copy; 2021 emailvip.com | unproyecto.eu</p>
+			<p id=copy></p>
 		</div>	
 	</div>
+	<script>
+		var currentTime = new Date();
+		var year = currentTime.getFullYear()
+		document.getElementById("copy").innerHTML = "&copy; "+ year + " emailvip.com | unproyecto.eu";
+	</script>
 </body>
 </html>
